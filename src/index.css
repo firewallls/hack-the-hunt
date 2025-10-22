@@ -8,89 +8,139 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
-
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-
-  .dark {
-    --background: 222.2 84% 4.9%;
+    /* Deep Space Backgrounds */
+    --background: 237 75% 8%;
     --foreground: 210 40% 98%;
 
-    --card: 222.2 84% 4.9%;
+    /* Surface Layers */
+    --card: 221 100% 3%;
     --card-foreground: 210 40% 98%;
+    
+    --surface: 217 100% 12%;
+    --surface-bright: 217 95% 18%;
 
-    --popover: 222.2 84% 4.9%;
+    /* Neon Accents */
+    --primary: 237 100% 54%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 237 100% 65%;
+    
+    --secondary: 185 100% 52%;
+    --secondary-foreground: 221 100% 3%;
+    --secondary-glow: 185 100% 65%;
+    
+    --success: 141 100% 63%;
+    --success-foreground: 221 100% 3%;
+    --success-glow: 141 100% 75%;
+    
+    --accent: 268 100% 58%;
+    --accent-foreground: 0 0% 100%;
+    --accent-glow: 268 100% 70%;
+
+    /* Functional Colors */
+    --muted: 217 95% 15%;
+    --muted-foreground: 215 20% 65%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Borders & Inputs */
+    --border: 217 95% 18%;
+    --input: 217 95% 18%;
+    --ring: 237 100% 54%;
+
+    /* Popover */
+    --popover: 221 100% 5%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --radius: 0.75rem;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    /* Terminal Colors */
+    --terminal-green: 141 100% 63%;
+    --terminal-cursor: 185 100% 52%;
+    --terminal-text: 210 40% 85%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    /* Glow Effects */
+    --glow-primary: 237 100% 54% / 0.3;
+    --glow-secondary: 185 100% 52% / 0.4;
+    --glow-success: 141 100% 63% / 0.4;
+    --glow-accent: 268 100% 58% / 0.3;
+  }
+}
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+@layer utilities {
+  /* Terminal Effects */
+  .terminal-text {
+    font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+    @apply text-terminal-text;
+  }
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+  /* Glow Effects */
+  .glow-primary {
+    box-shadow: 0 0 20px hsl(var(--glow-primary)),
+                0 0 40px hsl(var(--glow-primary));
+  }
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+  .glow-secondary {
+    box-shadow: 0 0 20px hsl(var(--glow-secondary)),
+                0 0 40px hsl(var(--glow-secondary));
+  }
+
+  .glow-success {
+    box-shadow: 0 0 20px hsl(var(--glow-success)),
+                0 0 40px hsl(var(--glow-success));
+  }
+
+  .glow-accent {
+    box-shadow: 0 0 20px hsl(var(--glow-accent)),
+                0 0 40px hsl(var(--glow-accent));
+  }
+
+  /* Scan Lines */
+  .scan-lines {
+    position: relative;
+  }
+
+  .scan-lines::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      transparent 50%,
+      rgba(0, 0, 0, 0.1) 50%
+    );
+    background-size: 100% 4px;
+    pointer-events: none;
+    animation: scan 8s linear infinite;
+  }
+
+  /* Network Grid */
+  .network-grid {
+    background-image: 
+      linear-gradient(hsl(var(--primary) / 0.1) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--primary) / 0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+
+  /* Binary Data Stream */
+  .data-stream {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .data-stream::before {
+    content: '01001000 01000001 01000011 01001011 01010100 01001000 01000101 01001000 01010101 01001110 01010100';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: hsl(var(--primary) / 0.15);
+    font-size: 0.75rem;
+    font-family: monospace;
+    white-space: nowrap;
+    animation: stream 20s linear infinite;
   }
 }
 
@@ -101,5 +151,91 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+
+  /* Import terminal font */
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap');
+}
+
+/* Keyframe Animations */
+@keyframes glitch {
+  0%, 100% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  0%, 49% {
+    opacity: 1;
+  }
+  50%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes scan {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes stream {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes circuit {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  100% {
+    stroke-dashoffset: 0;
   }
 }
