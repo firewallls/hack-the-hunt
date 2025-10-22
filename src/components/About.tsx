@@ -48,13 +48,13 @@ const About = () => {
         {/* Section Header */}
         <div className="text-center mb-12 sm:mb-16 space-y-4">
           <div className="inline-block">
-            <div className="text-sm font-mono text-primary mb-2">&lt;section id="about"&gt;</div>
+            {/*<div className="text-sm font-mono text-primary mb-2">&lt;section id="about"&gt;</div>*/}
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
               <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
                 About The Hunt
               </span>
             </h2>
-            <div className="text-sm font-mono text-primary">&lt;/section&gt;</div>
+            {/*<div className="text-sm font-mono text-primary">&lt;/section&gt;</div>*/}
           </div>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Hack The Hunt is a Capture The Flag (CTF) cybersecurity competition where participants solve 
