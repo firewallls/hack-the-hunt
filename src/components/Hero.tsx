@@ -78,7 +78,7 @@ const Hero = () => {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-8">
             <Button size="xl" variant="cyber" asChild>
-              <a href="#register">
+              <a href="https://forms.gle/YKpKoyRabThCVWkz8">
                 <Terminal className="w-5 h-5" />
                 Register Now
               </a>

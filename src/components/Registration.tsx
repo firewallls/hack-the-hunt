@@ -123,8 +123,10 @@ const Registration = () => {
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Button size="xl" variant="success">
-                <UserCheck className="w-5 h-5" />
-                Register Your Team
+                  <a href={'https://forms.gle/YKpKoyRabThCVWkz8'}>
+                    <UserCheck className="w-5 h-5" />
+                    Register Your Team
+                  </a>
               </Button>
               <Button size="xl" variant="outline">
                 View Team Requirements

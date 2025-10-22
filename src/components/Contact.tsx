@@ -147,7 +147,7 @@ const Contact = () => {
               View FAQ
             </Button>
             <Button variant="outline" size="sm" asChild>
-              <a href="mailto:xyz@gmail.com">
+              <a href="mailto:rudra.choudhary2024@nst.rishihood.edu.in">
                 <Mail className="w-4 h-4" />
                 Email Us
               </a>
