@@ -23,8 +23,8 @@ const Rules = () => {
       id: "RULE_003",
       title: "Fair Play Policy",
       type: "critical",
-      summary: "Strictly no cheating, sharing flags, or unauthorized collaboration",
-      details: "Any form of cheating, including but not limited to sharing flags between teams, using unauthorized tools, attacking competition infrastructure, or collaborating with other teams will result in immediate disqualification. Play fair and respect the competition.",
+      summary: "Strictly prohibited to damage hints",
+      details: "Any form of damage to infrastructure or hints or QR codes will result in disqualification. Any kind of attempt to obstruct the visibility of flag will result in disqualification",
     },
     {
       id: "RULE_004",
@@ -38,7 +38,7 @@ const Rules = () => {
       title: "Flag Format",
       type: "info",
       summary: "All flags follow standard CTF format",
-      details: "Flags will be in the format: flag{...} or SOCS{...}. Ensure you submit the complete flag exactly as found, including the wrapper. Case sensitivity applies unless otherwise specified in the challenge description.",
+      details: "Flags will be in the format: SOCS{...} . Ensure you submit the complete flag exactly as found, including the wrapper. Case sensitivity applies unless otherwise specified in the challenge description.",
     },
     {
       id: "RULE_006",

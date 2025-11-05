@@ -38,10 +38,10 @@ const Contact = () => {
                     For queries, technical issues, or general support
                   </p>
                   <a
-                    href="mailto:xyz@gmail.com"
+                    href="mailto:chhavi.25542@nst.rishihood.edu.in?bcc=rudra.choudhary2024@nst.rishihood.edu.in"
                     className="inline-flex items-center gap-2 text-primary hover:text-primary-glow font-mono text-sm transition-colors"
                   >
-                    xyz@gmail.com
+                      chhavi.25542@nst.rishihood.edu.in
                     <ExternalLink className="w-4 h-4" />
                   </a>
                 </div>
@@ -131,7 +131,9 @@ const Contact = () => {
             </div>
 
             <Button size="lg" variant="cyber" className="w-full">
-              Join SOCS Community
+                <a href={'https://chat.whatsapp.com/Ctq3sZ4PfRH5jlAUNuWLBD?mode=wwt'}>
+                    Join SOCS Community
+                </a>
             </Button>
           </div>
         </div>
@@ -147,7 +149,7 @@ const Contact = () => {
               View FAQ
             </Button>
             <Button variant="outline" size="sm" asChild>
-              <a href="mailto:rudra.choudhary2024@nst.rishihood.edu.in">
+              <a href="mailto:chhavi.25542@nst.rishihood.edu.in?bcc=rudra.choudhary2024@nst.rishihood.edu.in">
                 <Mail className="w-4 h-4" />
                 Email Us
               </a>

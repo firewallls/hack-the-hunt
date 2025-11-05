@@ -108,7 +108,7 @@ const About = () => {
             </div>
             <div>
               <div className="text-muted-foreground mb-2">Duration:</div>
-              <div className="text-foreground font-mono">TBA - Check back soon</div>
+              <div className="text-foreground font-mono">5 Hours</div>
             </div>
             <div>
               <div className="text-muted-foreground mb-2">Skill Level:</div>

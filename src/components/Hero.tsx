@@ -71,7 +71,7 @@ const Hero = () => {
             Test your skills in <span className="text-primary font-semibold">OSINT</span>, 
             <span className="text-secondary font-semibold"> Cryptography</span>, 
             <span className="text-success font-semibold"> Web Exploitation</span>, 
-            <span className="text-accent font-semibold"> Forensics</span>, and more. 
+
             Compete in teams, crack challenges, and claim victory.
           </p>
 
@@ -97,7 +97,7 @@ const Hero = () => {
               { label: "Challenge Types", value: "5+" },
               { label: "Team Size", value: "3-5" },
               { label: "Difficulty Levels", value: "3" },
-              { label: "Prize Pool", value: "TBA" },
+              { label: "Prize Pool", value: "₹10,000" },
             ].map((stat) => (
               <div key={stat.label} className="bg-card/30 backdrop-blur-sm border border-primary/20 rounded-lg p-4 hover:border-primary/50 transition-all">
                 <div className="text-2xl sm:text-3xl font-bold text-primary font-mono">{stat.value}</div>
